@@ -6,6 +6,8 @@
 }
 
 .header-title {
+    position: relative;
+    top: 125px;
     display: inline;
     color: #ffffff;;
     text-transform: uppercase;
@@ -17,11 +19,9 @@
 
 .header-subtitle {
     position: relative;
-    top: 95px
+    top: 235px;
     float: left;
-    position: relative;
     display: inline;
-    top: 215px;
     left: 380px;
     color: #000;
     padding: 8px 17px;
