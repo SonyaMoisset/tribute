@@ -1,0 +1,31 @@
+.header {
+    background-image: url("../main-bg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.header-title {
+    display: inline;
+    color: #ffffff;;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 105px;
+    font-weight: bold;
+    background-color: #000000;
+}
+
+.header-subtitle {
+    position: relative;
+    top: 95px
+    float: left;
+    position: relative;
+    display: inline;
+    top: 215px;
+    left: 380px;
+    color: #000;
+    padding: 8px 17px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #ffffff;
+}
