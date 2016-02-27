@@ -7,7 +7,7 @@ var imageminJpegoptim = require('imagemin-jpegoptim');
 var jade = require('gulp-jade');
 
 gulp.task('css', function () {
-	return gulp.src('style.css')
+	return gulp.src('build/style.css')
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions'],
 			cascade: false
