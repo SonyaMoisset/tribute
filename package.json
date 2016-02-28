@@ -1,19 +1,8 @@
 {
   "name": "tribute",
   "version": "1.0.0",
-  "description": "Tribute",
-  "main": "gulpfile.js",
-  "dependencies": {
-    "imagemin-jpeg-recompress": "^4.3.0",
-    "imagemin-jpegoptim": "^4.1.0"
-  },
-  "devDependencies": {
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-csslint": "^0.2.0",
-    "gulp-cssnano": "^2.1.1",
-    "gulp-jade": "^1.1.0",
-    "gulp-stylus": "^2.3.0"
-  },
+  "description": "Tribute page on mothers of technology",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,10 +10,17 @@
     "type": "git",
     "url": "git+https://github.com/SonyaMoisset/tribute.git"
   },
-  "author": "",
+  "author": "Sonya Moisset",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/SonyaMoisset/tribute/issues"
   },
-  "homepage": "https://github.com/SonyaMoisset/tribute#readme"
+  "homepage": "https://github.com/SonyaMoisset/tribute#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.3.0",
+    "jade": "^1.11.0"
+  }
 }
