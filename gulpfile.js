@@ -1,46 +1,21 @@
 var gulp = require('gulp');
-var autoprefixer = require('gulp-autoprefixer');
-var csslint = require('gulp-csslint');
-var cssnano = require('gulp-cssnano');
+var jade = require('jade');
+var gulpJade = require('gulp-jade');
 var stylus = require('gulp-stylus');
-var imageminJpegoptim = require('imagemin-jpegoptim');
-var jade = require('gulp-jade');
+var cssnano = require('gulp-cssnano');
 
-gulp.task('css', function () {
-	return gulp.src('build/style.css')
-		.pipe(autoprefixer({
-			browsers: ['last 2 versions'],
-			cascade: false
-		}))
-    .pipe(cssnano())
-		.pipe(gulp.dest('build'));
-});
-
-gulp.task('csslint', function() {
-  gulp.src('*.css')
-    .pipe(csslint())
-    .pipe(csslint.reporter());
-});
-
-gulp.task('one', function () {
-  return gulp.src('style.styl')
-    .pipe(stylus())
-    .pipe(gulp.dest('build'));
-});
-
-gulp.task('img', function () {
-	return gulp.src('images/*.jpeg')
-		.pipe(imageminJpegoptim({progressive: true, max: 50, size: 300})())
-		.pipe(gulp.dest('images'));
-});
-
-gulp.task('jade', function() {
-  var YOUR_LOCALS = {};
-
-  gulp.src('*.jade')
-    .pipe(jade({
-      locals: YOUR_LOCALS,
+gulp.task('jade', function () {
+  return gulp.src('*.jade')
+    .pipe(gulpJade({
+      jade: jade,
       pretty: false
     }))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('build/'))
+})
+
+gulp.task('stylus', function () {
+  return gulp.src('*.styl')
+    .pipe(stylus())
+    .pipe(cssnano())
+    .pipe(gulp.dest('build'));
 });
