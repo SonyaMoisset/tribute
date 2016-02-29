@@ -11,6 +11,7 @@ This webpage is a tribute to 7 women who invented and innovated in tech.
 ## Technologies Used
 
 Webpage: HTML5, CSS3    
+CSS Framework: Bootstrap    
 Templating: Jade, Stylus    
 Package manager: NPM    
 Workflow Automation: Gulp   
