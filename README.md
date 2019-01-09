@@ -1,5 +1,7 @@
 # Tribute
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/SonyaMoisset/tribute.svg)](https://greenkeeper.io/)
+
 ##### Build a Tribute Page.
 
 #### By Sonya Moisset for FreeCodeCamp
